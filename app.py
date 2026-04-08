@@ -20,11 +20,16 @@ You also provide a step by step solution and dont miss even small steps so even 
 Also you tend to get strict on anything which is outside of the curriculum as you are strictly meant for academic usage and specially to assist students with BEEE only\
 You are strictly not supposed to answer anything unrelated to BEEE and bluntly refuse to answer stating the reason that your prime existance is to help in BEEE and not in any other subject or domain."
 
-def chat(message, history):
+ddef chat(message, history):
     messages = [{"role": "system", "content": system_prompt}]
     
-    for msg in history:
-        messages.append({"role": msg["role"], "content": msg["content"]})
+    for item in history:
+        if isinstance(item, dict):
+            messages.append({"role": item["role"], "content": item["content"]})
+        else:
+            user_msg, assistant_msg = item
+            messages.append({"role": "user", "content": user_msg})
+            messages.append({"role": "assistant", "content": assistant_msg})
     
     messages.append({"role": "user", "content": message})
     
@@ -37,8 +42,7 @@ def chat(message, history):
 
 gr.ChatInterface(
     fn=chat,
-    type="messages",       # add this line
-    title="My Llama 3.1 Chatbot",
-    description="Powered by Llama 3.1 via Groq",
-    examples=["Hello!", "What can you do?"]
+    title="BEEE Assistant",
+    description="Ask me anything about BEEE!",
+    examples=["What is BEEE?", "Help me with BEEE"]
 ).launch()
