@@ -1,5 +1,5 @@
 ---
-title: Gradio Chatbot
+title: EEE AI
 emoji: 💬
 colorFrom: yellow
 colorTo: purple
