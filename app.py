@@ -45,4 +45,4 @@ gr.ChatInterface(
     title="BEEE Assistant",
     description="Ask me anything about BEEE!",
     examples=["What is BEEE?", "Help me with BEEE"]
-).launch()
+).launch(share=True)
