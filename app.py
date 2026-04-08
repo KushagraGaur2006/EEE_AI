@@ -7,7 +7,7 @@ load_dotenv()
 
 client = OpenAI(
     base_url="https://api.groq.com/openai/v1",
-    api_key=os.getenv("	GROQ_API_KEY")
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
 system_prompt = "You are an assistant by the name Llama3.2 that is an expert in BEEE which is Basics of Electrical and Electronics Engineering \
