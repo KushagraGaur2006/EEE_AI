@@ -30,7 +30,7 @@ def chat(message, history):
     messages.append({"role": "user", "content": message})
     
     response = client.chat.completions.create(
-        model="llama-3.2-3b-preview",
+        model="llama-3.1-8b-instant",
         messages=messages
     )
     
@@ -38,7 +38,7 @@ def chat(message, history):
 
 gr.ChatInterface(
     fn=chat,
-    title="My Llama 3.2 Chatbot",
-    description="Powered by Llama 3.2 3B via Groq",
+    title="My Llama 3.1 Chatbot",
+    description="Powered by Llama 3.1 8B via Groq",
     examples=["Hello!", "What can you do?"]
 ).launch()
