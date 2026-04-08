@@ -23,9 +23,8 @@ You are strictly not supposed to answer anything unrelated to BEEE and bluntly r
 def chat(message, history):
     messages = [{"role": "system", "content": system_prompt}]
     
-    for user_msg, assistant_msg in history:
-        messages.append({"role": "user", "content": user_msg})
-        messages.append({"role": "assistant", "content": assistant_msg})
+    for msg in history:
+        messages.append({"role": msg["role"], "content": msg["content"]})
     
     messages.append({"role": "user", "content": message})
     
@@ -38,7 +37,8 @@ def chat(message, history):
 
 gr.ChatInterface(
     fn=chat,
+    type="messages",       # add this line
     title="My Llama 3.1 Chatbot",
-    description="Powered by Llama 3.1 8B via Groq",
+    description="Powered by Llama 3.1 via Groq",
     examples=["Hello!", "What can you do?"]
 ).launch()
