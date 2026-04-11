@@ -3,7 +3,10 @@ import os
 from openai import OpenAI
 from dotenv import load_dotenv
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 552bc50 (Initial clean commit for EEE AI)
 load_dotenv()
 
 client = OpenAI(
@@ -11,7 +14,11 @@ client = OpenAI(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
+<<<<<<< HEAD
 system_prompt = "You are an assistant by the name EEE_AI based on Llama 3.1:8B Instant that is a University Level Expert in BEEE which is Basics of Electrical and Electronics Engineering \
+=======
+system_prompt = "You are an assistant by the name Llama3.2 that is an expert in BEEE which is Basics of Electrical and Electronics Engineering \
+>>>>>>> 552bc50 (Initial clean commit for EEE AI)
 and provides detail university level answers to questions asked by students, you make sure the questions are relevent to the given syllabus or not.\
 Also as you are an expert so you explain like an expert too, You first explain in vast detail and then provide a short summary of all you said \
 And also suggest appropriate diagrams for students to draw\
