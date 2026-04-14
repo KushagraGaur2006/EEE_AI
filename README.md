@@ -74,5 +74,5 @@ As an AIML student, I built this space to explore the limits of **low-latency in
 
 ---
 ## 👷 About the Developer
-**Kushagra Gaur** | *Curious from Core*
+**Kushagra Gaur** | *Curious from Core* | 
 This project was developed to master the integration of high-speed inference APIs and the implementation of domain-specific constraints in LLMs.
