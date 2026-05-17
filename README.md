@@ -12,24 +12,10 @@ hf_oauth_scopes:
 - inference-api
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 # 🎓 EEE_AI: Specialized Pedagogical Agent
 ### Powered by Llama-3.1-8B-Instant & Groq LPU™
 
 **EEE_AI** is an AI-driven tutoring system designed to assist students with the fundamentals of **Electrical and Electronics Engineering (EEE)**. This project serves as a bridge between high-performance LLM engineering and domain-specific educational technology.
-=======
-# 🎓 EEE-Educator: Specialized Pedagogical Agent
-### Powered by Llama-3.1-8B-Instant & Groq LPU™
-
-**EEE-Educator** is an AI-driven tutoring system designed to assist students with the fundamentals of **Electrical and Electronics Engineering (EEE)**. This project serves as a bridge between high-performance LLM engineering and domain-specific educational technology.
->>>>>>> 552bc50 (Initial clean commit for EEE AI)
-=======
-# 🎓 EEE_AI: Specialized Pedagogical Agent
-### Powered by Llama-3.1-8B-Instant & Groq LPU™
-
-**EEE_AI** is an AI-driven tutoring system designed to assist students with the fundamentals of **Electrical and Electronics Engineering (EEE)**. This project serves as a bridge between high-performance LLM engineering and domain-specific educational technology.
->>>>>>> ecf2431 (Updated README Correcting the Model Name)
 
 ---
 
@@ -53,26 +39,12 @@ As an AIML student, I built this space to explore the limits of **low-latency in
 
 ## 📖 Sample Interactions
 > **User:** "Explain KVL in simple terms."
-<<<<<<< HEAD
-<<<<<<< HEAD
 > **EEE_AI:** [Provides explanation] + "Would you like a practice circuit problem to test this law?"
 
 > **User:** "What's the best movie to watch tonight?"
 > **EEE_AI:** "I am focused on your engineering success! Let's get back to EEE—perhaps we can discuss how Signal Processing is used in movie audio instead?"
-=======
-> **EEE-AI:** [Provides explanation] + "Would you like a practice circuit problem to test this law?"
-
-> **User:** "What's the best movie to watch tonight?"
-> **EEE-AI:** "I am focused on your engineering success! Let's get back to EEE—perhaps we can discuss how Signal Processing is used in movie audio instead?"
->>>>>>> 552bc50 (Initial clean commit for EEE AI)
-=======
-> **EEE_AI:** [Provides explanation] + "Would you like a practice circuit problem to test this law?"
-
-> **User:** "What's the best movie to watch tonight?"
-> **EEE_AI:** "I am focused on your engineering success! Let's get back to EEE—perhaps we can discuss how Signal Processing is used in movie audio instead?"
->>>>>>> ecf2431 (Updated README Correcting the Model Name)
 
 ---
 ## 👷 About the Developer
-**Kushagra Gaur** | *Curious from Core* | 
+**Kushagra Gaur** | *Curious from Core*
 This project was developed to master the integration of high-speed inference APIs and the implementation of domain-specific constraints in LLMs.

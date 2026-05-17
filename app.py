@@ -4,14 +4,12 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 
-
 load_dotenv()
 
 client = OpenAI(
     base_url="https://api.groq.com/openai/v1",
     api_key=os.getenv("GROQ_API_KEY")
 )
-
 
 system_prompt = "You are an assistant by the name EEE_AI based on Llama 3.1:8B Instant that is a University Level Expert in BEEE which is Basics of Electrical and Electronics Engineering \
 and provides detail university level answers to questions asked by students, you make sure the questions are relevent to the given syllabus or not.\
@@ -36,12 +34,16 @@ def chat(message, history):
     
     messages.append({"role": "user", "content": message})
     
-    response = client.chat.completions.create(
+    stream = client.chat.completions.create(
         model="llama-3.1-8b-instant",
         messages=messages
+        stream = True
     )
+    result=""
+    for chunk in stream:
+        result+=chunk.choices[0].delta.content or ""
+        yield result
     
-    return response.choices[0].message.content
 
 gr.ChatInterface(
     fn=chat,
