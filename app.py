@@ -35,7 +35,7 @@ def chat(message, history):
     messages.append({"role": "user", "content": message})
     
     stream = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model="openai/gpt-oss-20b",
         messages=messages,
         stream = True
     )
